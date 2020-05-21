@@ -6740,6 +6740,35 @@ exports.default = _default;
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/icons/Share.js":
+/*!**************************************************!*\
+  !*** ./node_modules/@material-ui/icons/Share.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
+
+var _default = (0, _createSvgIcon.default)(_react.default.createElement("path", {
+  d: "M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"
+}), 'Share');
+
+exports.default = _default;
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/icons/utils/createSvgIcon.js":
 /*!****************************************************************!*\
   !*** ./node_modules/@material-ui/icons/utils/createSvgIcon.js ***!
@@ -26791,7 +26820,7 @@ function MyApp(props) {
       lineNumber: 24,
       columnNumber: 9
     }
-  }, "Electric Vechicle Database"), __jsx("meta", {
+  }, "Electric Vechicle Database - Research electric vehicles - EVDb.app"), __jsx("meta", {
     name: "viewport",
     content: "minimum-scale=1, initial-scale=1, width=device-width",
     __self: this,
@@ -26800,40 +26829,59 @@ function MyApp(props) {
       lineNumber: 25,
       columnNumber: 9
     }
-  })), __jsx(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__["ThemeProvider"], {
-    theme: _src_theme__WEBPACK_IMPORTED_MODULE_6__["default"],
+  }), __jsx("meta", {
+    name: "description",
+    content: "Research electric vehicles with the most up-to-date specifications from Tesla, Audi, Rivian, Ford, Volkswagen, Polestar, Volvo, BMW, and other battery electric vehicle (BEV) automakers.",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
-      columnNumber: 7
-    }
-  }, __jsx(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 29,
       columnNumber: 9
     }
-  }), __jsx(_src_ApplicationBar__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32,
-      columnNumber: 9
-    }
-  }), __jsx(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
+  }), __jsx("meta", {
+    name: "og:title",
+    property: "og:title",
+    content: "Research electric vehicles with the most up-to-date specifications from Tesla, Audi, Rivian, Ford, Volkswagen, Polestar, Volvo, BMW, and other battery electric vehicle (BEV) automakers.",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33,
       columnNumber: 9
     }
+  })), __jsx(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__["ThemeProvider"], {
+    theme: _src_theme__WEBPACK_IMPORTED_MODULE_6__["default"],
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 7
+    }
+  }, __jsx(_material_ui_core_CssBaseline__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 9
+    }
+  }), __jsx(_src_ApplicationBar__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 9
+    }
+  }), __jsx(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, pageProps, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 9
+    }
   })), __jsx(_src_Footer__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34,
+      lineNumber: 39,
       columnNumber: 9
     }
   })));
@@ -26909,6 +26957,7 @@ function ApplicationBar() {
     }
   }, __jsx(_material_ui_icons_BatteryChargingFull__WEBPACK_IMPORTED_MODULE_4___default.a, {
     className: classes.appIcon,
+    alt: "Electric vehicle research database logo",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -26948,12 +26997,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Grid */ "./node_modules/@material-ui/core/esm/Grid/index.js");
 /* harmony import */ var _material_ui_core_Box__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Box */ "./node_modules/@material-ui/core/esm/Box/index.js");
 /* harmony import */ var react_share__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-share */ "./node_modules/react-share/es/index.js");
+/* harmony import */ var _material_ui_icons_Share__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/Share */ "./node_modules/@material-ui/icons/Share.js");
+/* harmony import */ var _material_ui_icons_Share__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Share__WEBPACK_IMPORTED_MODULE_7__);
 var _jsxFileName = "/Users/josh/sandbox/joshkitt/evdb/src/Footer.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
  // import TwitterIcon from '@material-ui/icons/Twitter';
+
 
 
 
@@ -26974,7 +27026,7 @@ function Footer() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 50,
       columnNumber: 5
     }
   }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -26982,40 +27034,49 @@ function Footer() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 51,
       columnNumber: 7
     }
-  }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_6__["TwitterShareButton"], {
-    url: "http://www.something.com",
+  }, __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    component: "span",
+    marginLeft: "7px",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51,
+      lineNumber: 53,
       columnNumber: 9
+    }
+  }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_6__["TwitterShareButton"], {
+    url: "http://www.evdb.app",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 11
     }
   }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_6__["TwitterIcon"], {
     size: 32,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52,
-      columnNumber: 11
+      lineNumber: 55,
+      columnNumber: 13
     }
-  })), __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }))), __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
     component: "span",
     marginLeft: "7px",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54,
+      lineNumber: 58,
       columnNumber: 9
     }
   }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_6__["FacebookShareButton"], {
-    url: "http://www.something.com",
+    url: "http://www.evdb.app",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55,
+      lineNumber: 59,
       columnNumber: 11
     }
   }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_6__["FacebookIcon"], {
@@ -27023,7 +27084,7 @@ function Footer() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 60,
       columnNumber: 13
     }
   }))), __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -27032,15 +27093,15 @@ function Footer() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
+      lineNumber: 63,
       columnNumber: 9
     }
   }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_6__["RedditShareButton"], {
-    url: "http://www.something.com",
+    url: "http://www.evdb.app",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
+      lineNumber: 64,
       columnNumber: 11
     }
   }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_6__["RedditIcon"], {
@@ -27048,7 +27109,7 @@ function Footer() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61,
+      lineNumber: 65,
       columnNumber: 13
     }
   }))), __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -27057,15 +27118,15 @@ function Footer() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64,
+      lineNumber: 68,
       columnNumber: 9
     }
   }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_6__["LinkedinShareButton"], {
-    url: "http://www.something.com",
+    url: "http://www.evdb.app",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65,
+      lineNumber: 69,
       columnNumber: 11
     }
   }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_6__["LinkedinIcon"], {
@@ -27073,7 +27134,7 @@ function Footer() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
+      lineNumber: 70,
       columnNumber: 13
     }
   }))), __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -27082,15 +27143,15 @@ function Footer() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 73,
       columnNumber: 9
     }
   }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_6__["EmailShareButton"], {
-    url: "http://www.something.com",
+    url: "http://www.evdb.app",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 74,
       columnNumber: 11
     }
   }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_6__["EmailIcon"], {
@@ -27098,7 +27159,7 @@ function Footer() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71,
+      lineNumber: 75,
       columnNumber: 13
     }
   })))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -27106,7 +27167,7 @@ function Footer() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75,
+      lineNumber: 79,
       columnNumber: 7
     }
   }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -27116,7 +27177,7 @@ function Footer() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 80,
       columnNumber: 9
     }
   }, "Copyright © ", "Electric Vehicle Database ", new Date().getFullYear(), ".")));

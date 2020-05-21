@@ -83809,7 +83809,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 105,
+          lineNumber: 116,
           columnNumber: 7
         }
       }, __jsx(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -83819,7 +83819,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106,
+          lineNumber: 117,
           columnNumber: 9
         }
       }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_21__["default"], {
@@ -83828,7 +83828,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 107,
+          lineNumber: 118,
           columnNumber: 11
         }
       }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_21__["default"], {
@@ -83836,7 +83836,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 108,
+          lineNumber: 119,
           columnNumber: 13
         }
       }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -83846,7 +83846,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 109,
+          lineNumber: 120,
           columnNumber: 15
         }
       }, "Electric Vehicle Search")), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_21__["default"], {
@@ -83854,7 +83854,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 113,
+          lineNumber: 124,
           columnNumber: 13
         }
       }, __jsx(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_17__["default"], {
@@ -83862,15 +83862,15 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 114,
+          lineNumber: 125,
           columnNumber: 15
         }
       }, __jsx(_material_ui_core_InputLabel__WEBPACK_IMPORTED_MODULE_16__["default"], {
-        htmlFor: "outlined-age-native-simple",
+        htmlFor: "make",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 115,
+          lineNumber: 126,
           columnNumber: 17
         }
       }, "Make"), __jsx(_material_ui_core_Select__WEBPACK_IMPORTED_MODULE_18__["default"], {
@@ -83878,10 +83878,13 @@ var App = /*#__PURE__*/function (_React$Component) {
         value: this.state.make,
         onChange: this.handleMakeChange,
         label: "Make",
+        inputProps: {
+          id: "make"
+        },
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 118,
+          lineNumber: 127,
           columnNumber: 17
         }
       }, __jsx("option", {
@@ -83890,7 +83893,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 124,
+          lineNumber: 136,
           columnNumber: 19
         }
       }), this.state.makes.sort().map(function (x, index) {
@@ -83900,8 +83903,8 @@ var App = /*#__PURE__*/function (_React$Component) {
           __self: _this2,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 126,
-            columnNumber: 28
+            lineNumber: 139,
+            columnNumber: 23
           }
         }, x);
       }))), __jsx(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_17__["default"], {
@@ -83910,15 +83913,15 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 130,
+          lineNumber: 146,
           columnNumber: 15
         }
       }, __jsx(_material_ui_core_InputLabel__WEBPACK_IMPORTED_MODULE_16__["default"], {
-        htmlFor: "outlined-age-native-simple",
+        htmlFor: "model",
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 131,
+          lineNumber: 147,
           columnNumber: 17
         }
       }, "Model"), __jsx(_material_ui_core_Select__WEBPACK_IMPORTED_MODULE_18__["default"], {
@@ -83927,10 +83930,13 @@ var App = /*#__PURE__*/function (_React$Component) {
         onChange: this.handleModelChange,
         disabled: this.state.models.length === 0,
         label: "Model",
+        inputProps: {
+          id: "model"
+        },
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 134,
+          lineNumber: 148,
           columnNumber: 17
         }
       }, __jsx("option", {
@@ -83939,7 +83945,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 141,
+          lineNumber: 158,
           columnNumber: 19
         }
       }), this.state.models.sort().map(function (x) {
@@ -83949,8 +83955,8 @@ var App = /*#__PURE__*/function (_React$Component) {
           __self: _this2,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 143,
-            columnNumber: 28
+            lineNumber: 161,
+            columnNumber: 23
           }
         }, x.value);
       })))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_21__["default"], {
@@ -83958,7 +83964,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 148,
+          lineNumber: 169,
           columnNumber: 13
         }
       }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -83966,7 +83972,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 149,
+          lineNumber: 170,
           columnNumber: 15
         }
       }, "Research electric vehicles with the most up-to-date specifications from Tesla, Audi, Rivian, Ford, Volkswagen, Polestar, Volvo, BMW, and other battery electric vehicle (BEV) automakers."))), __jsx("div", {
@@ -83974,7 +83980,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 158,
+          lineNumber: 179,
           columnNumber: 11
         }
       }, __jsx(material_table__WEBPACK_IMPORTED_MODULE_22___default.a, {
@@ -84061,7 +84067,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         },
         localization: {
           body: {
-            emptyDataSourceMessage: 'Select a "Make" and "Model" to display vehicle data'
+            emptyDataSourceMessage: 'Select a "Make" and "Model" to research electric vehicle data'
           },
           toolbar: {
             searchPlaceholder: "Find within results"
@@ -84070,21 +84076,21 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 159,
+          lineNumber: 180,
           columnNumber: 13
         }
       })), __jsx(_src_Hint__WEBPACK_IMPORTED_MODULE_24__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 244,
+          lineNumber: 264,
           columnNumber: 11
         }
       }), __jsx(_src_Ad__WEBPACK_IMPORTED_MODULE_23__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 245,
+          lineNumber: 265,
           columnNumber: 11
         }
       })));
@@ -84251,6 +84257,7 @@ function Hint() {
     }
   }, __jsx(LightBulbIcon, {
     className: classes.lightBulb,
+    alt: "Electric vehicle research hints icon",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -84262,7 +84269,7 @@ function Hint() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!*****************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fjosh%2Fsandbox%2Fjoshkitt%2Fevdb%2Fpages%2Findex.js&hotRouterUpdates=true ***!
   \*****************************************************************************************************************************************************/
@@ -84285,5 +84292,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
