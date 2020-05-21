@@ -83649,6 +83649,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var material_table__WEBPACK_IMPORTED_MODULE_22___default = /*#__PURE__*/__webpack_require__.n(material_table__WEBPACK_IMPORTED_MODULE_22__);
 /* harmony import */ var _src_Ad__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ../src/Ad */ "./src/Ad.js");
 /* harmony import */ var _src_Hint__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ../src/Hint */ "./src/Hint.js");
+/* harmony import */ var _material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @material-ui/core/CircularProgress */ "./node_modules/@material-ui/core/esm/CircularProgress/index.js");
 
 
 
@@ -83684,6 +83685,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
+
 var styles = function styles(theme) {
   return {
     root: {
@@ -83698,6 +83700,14 @@ var styles = function styles(theme) {
     },
     formField: {
       width: "200px"
+    },
+    spinner: {
+      display: 'flex',
+      position: 'absolute',
+      zIndex: 1,
+      '& > * + *': {
+        marginLeft: theme.spacing(2)
+      }
     }
   };
 };
@@ -83762,6 +83772,10 @@ var App = /*#__PURE__*/function (_React$Component) {
 
     Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__["default"])(_this), "loadData", function (make, model, shouldLoadModels) {
       _this.setState({
+        loading: true
+      });
+
+      _this.setState({
         data: []
       });
 
@@ -83770,10 +83784,10 @@ var App = /*#__PURE__*/function (_React$Component) {
 
         if (model) {
           uri += "/" + model;
-        }
+        } // fetch("http://localhost:8000/vehicles/" + uri)
 
-        fetch("http://localhost:8000/vehicles/" + uri) // fetch("https://hofpnvfyu2.execute-api.us-east-1.amazonaws.com/vehicles/" + uri)
-        .then(function (res) {
+
+        fetch("https://hofpnvfyu2.execute-api.us-east-1.amazonaws.com/vehicles/" + uri).then(function (res) {
           return res.json();
         }).then(function (data) {
           _this.setState({
@@ -83783,6 +83797,10 @@ var App = /*#__PURE__*/function (_React$Component) {
           if (shouldLoadModels) {
             _this.loadModels(data);
           }
+
+          _this.setState({
+            loading: false
+          });
         })["catch"](console.log);
       }
     });
@@ -83793,7 +83811,8 @@ var App = /*#__PURE__*/function (_React$Component) {
       make: "",
       model: "",
       year: "",
-      data: []
+      data: [],
+      loading: false
     };
     return _this;
   }
@@ -83809,7 +83828,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 116,
+          lineNumber: 129,
           columnNumber: 7
         }
       }, __jsx(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -83819,7 +83838,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 117,
+          lineNumber: 130,
           columnNumber: 9
         }
       }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_21__["default"], {
@@ -83828,7 +83847,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 118,
+          lineNumber: 131,
           columnNumber: 11
         }
       }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_21__["default"], {
@@ -83836,7 +83855,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 119,
+          lineNumber: 132,
           columnNumber: 13
         }
       }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -83846,7 +83865,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 120,
+          lineNumber: 133,
           columnNumber: 15
         }
       }, "Electric Vehicle Search")), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_21__["default"], {
@@ -83854,7 +83873,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 124,
+          lineNumber: 137,
           columnNumber: 13
         }
       }, __jsx(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_17__["default"], {
@@ -83862,7 +83881,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 125,
+          lineNumber: 138,
           columnNumber: 15
         }
       }, __jsx(_material_ui_core_InputLabel__WEBPACK_IMPORTED_MODULE_16__["default"], {
@@ -83870,7 +83889,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 126,
+          lineNumber: 139,
           columnNumber: 17
         }
       }, "Make"), __jsx(_material_ui_core_Select__WEBPACK_IMPORTED_MODULE_18__["default"], {
@@ -83884,7 +83903,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127,
+          lineNumber: 140,
           columnNumber: 17
         }
       }, __jsx("option", {
@@ -83893,7 +83912,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 136,
+          lineNumber: 149,
           columnNumber: 19
         }
       }), this.state.makes.sort().map(function (x, index) {
@@ -83903,7 +83922,7 @@ var App = /*#__PURE__*/function (_React$Component) {
           __self: _this2,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 139,
+            lineNumber: 152,
             columnNumber: 23
           }
         }, x);
@@ -83913,7 +83932,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 146,
+          lineNumber: 159,
           columnNumber: 15
         }
       }, __jsx(_material_ui_core_InputLabel__WEBPACK_IMPORTED_MODULE_16__["default"], {
@@ -83921,7 +83940,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 147,
+          lineNumber: 160,
           columnNumber: 17
         }
       }, "Model"), __jsx(_material_ui_core_Select__WEBPACK_IMPORTED_MODULE_18__["default"], {
@@ -83936,7 +83955,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 148,
+          lineNumber: 161,
           columnNumber: 17
         }
       }, __jsx("option", {
@@ -83945,7 +83964,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 158,
+          lineNumber: 171,
           columnNumber: 19
         }
       }), this.state.models.sort().map(function (x) {
@@ -83955,7 +83974,7 @@ var App = /*#__PURE__*/function (_React$Component) {
           __self: _this2,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 161,
+            lineNumber: 174,
             columnNumber: 23
           }
         }, x.value);
@@ -83964,7 +83983,7 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 169,
+          lineNumber: 182,
           columnNumber: 13
         }
       }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -83972,15 +83991,30 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 170,
+          lineNumber: 183,
           columnNumber: 15
         }
       }, "Research electric vehicles with the most up-to-date specifications from Tesla, Audi, Rivian, Ford, Volkswagen, Polestar, Volvo, BMW, and other battery electric vehicle (BEV) automakers."))), __jsx("div", {
+        className: classes.spinner,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 192,
+          columnNumber: 11
+        }
+      }, this.state.loading && __jsx(_material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_25__["default"], {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 193,
+          columnNumber: 36
+        }
+      })), __jsx("div", {
         className: classes.table,
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 179,
+          lineNumber: 196,
           columnNumber: 11
         }
       }, __jsx(material_table__WEBPACK_IMPORTED_MODULE_22___default.a, {
@@ -84076,21 +84110,21 @@ var App = /*#__PURE__*/function (_React$Component) {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 180,
+          lineNumber: 197,
           columnNumber: 13
         }
       })), __jsx(_src_Hint__WEBPACK_IMPORTED_MODULE_24__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 264,
+          lineNumber: 281,
           columnNumber: 11
         }
       }), __jsx(_src_Ad__WEBPACK_IMPORTED_MODULE_23__["default"], {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 265,
+          lineNumber: 282,
           columnNumber: 11
         }
       })));
