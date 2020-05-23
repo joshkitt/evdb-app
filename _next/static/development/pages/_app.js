@@ -1078,175 +1078,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/@material-ui/core/esm/Container/Container.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/Container/Container.js ***!
-  \*******************************************************************/
-/*! exports provided: styles, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "styles", function() { return styles; });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutProperties */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js");
-/* harmony import */ var _babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/defineProperty */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
-/* harmony import */ var _styles_withStyles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/withStyles */ "./node_modules/@material-ui/core/esm/styles/withStyles.js");
-/* harmony import */ var _utils_capitalize__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utils/capitalize */ "./node_modules/@material-ui/core/esm/utils/capitalize.js");
-
-
-
-
-
-
-
-
-var styles = function styles(theme) {
-  return {
-    /* Styles applied to the root element. */
-    root: Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])({
-      width: '100%',
-      marginLeft: 'auto',
-      boxSizing: 'border-box',
-      marginRight: 'auto',
-      paddingLeft: theme.spacing(2),
-      paddingRight: theme.spacing(2),
-      display: 'block'
-    }, theme.breakpoints.up('sm'), {
-      paddingLeft: theme.spacing(3),
-      paddingRight: theme.spacing(3)
-    }),
-
-    /* Styles applied to the root element if `disableGutters={true}`. */
-    disableGutters: {
-      paddingLeft: 0,
-      paddingRight: 0
-    },
-
-    /* Styles applied to the root element if `fixed={true}`. */
-    fixed: Object.keys(theme.breakpoints.values).reduce(function (acc, breakpoint) {
-      var value = theme.breakpoints.values[breakpoint];
-
-      if (value !== 0) {
-        acc[theme.breakpoints.up(breakpoint)] = {
-          maxWidth: value
-        };
-      }
-
-      return acc;
-    }, {}),
-
-    /* Styles applied to the root element if `maxWidth="xs"`. */
-    maxWidthXs: Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])({}, theme.breakpoints.up('xs'), {
-      maxWidth: Math.max(theme.breakpoints.values.xs, 444)
-    }),
-
-    /* Styles applied to the root element if `maxWidth="sm"`. */
-    maxWidthSm: Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])({}, theme.breakpoints.up('sm'), {
-      maxWidth: theme.breakpoints.values.sm
-    }),
-
-    /* Styles applied to the root element if `maxWidth="md"`. */
-    maxWidthMd: Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])({}, theme.breakpoints.up('md'), {
-      maxWidth: theme.breakpoints.values.md
-    }),
-
-    /* Styles applied to the root element if `maxWidth="lg"`. */
-    maxWidthLg: Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])({}, theme.breakpoints.up('lg'), {
-      maxWidth: theme.breakpoints.values.lg
-    }),
-
-    /* Styles applied to the root element if `maxWidth="xl"`. */
-    maxWidthXl: Object(_babel_runtime_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])({}, theme.breakpoints.up('xl'), {
-      maxWidth: theme.breakpoints.values.xl
-    })
-  };
-};
-var Container = react__WEBPACK_IMPORTED_MODULE_3__["forwardRef"](function Container(props, ref) {
-  var classes = props.classes,
-      className = props.className,
-      _props$component = props.component,
-      Component = _props$component === void 0 ? 'div' : _props$component,
-      _props$disableGutters = props.disableGutters,
-      disableGutters = _props$disableGutters === void 0 ? false : _props$disableGutters,
-      _props$fixed = props.fixed,
-      fixed = _props$fixed === void 0 ? false : _props$fixed,
-      _props$maxWidth = props.maxWidth,
-      maxWidth = _props$maxWidth === void 0 ? 'lg' : _props$maxWidth,
-      other = Object(_babel_runtime_helpers_esm_objectWithoutProperties__WEBPACK_IMPORTED_MODULE_1__["default"])(props, ["classes", "className", "component", "disableGutters", "fixed", "maxWidth"]);
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__["createElement"](Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    className: Object(clsx__WEBPACK_IMPORTED_MODULE_5__["default"])(classes.root, className, fixed && classes.fixed, disableGutters && classes.disableGutters, maxWidth !== false && classes["maxWidth".concat(Object(_utils_capitalize__WEBPACK_IMPORTED_MODULE_7__["default"])(String(maxWidth)))]),
-    ref: ref
-  }, other));
-});
- true ? Container.propTypes = {
-  children: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.node.isRequired,
-
-  /**
-   * Override or extend the styles applied to the component.
-   * See [CSS API](#css) below for more details.
-   */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object.isRequired,
-
-  /**
-   * @ignore
-   */
-  className: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string,
-
-  /**
-   * The component used for the root node.
-   * Either a string to use a HTML element or a component.
-   */
-  component: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.elementType,
-
-  /**
-   * If `true`, the left and right padding is removed.
-   */
-  disableGutters: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
-
-  /**
-   * Set the max-width to match the min-width of the current breakpoint.
-   * This is useful if you'd prefer to design for a fixed set of sizes
-   * instead of trying to accommodate a fully fluid viewport.
-   * It's fluid by default.
-   */
-  fixed: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.bool,
-
-  /**
-   * Determine the max-width of the container.
-   * The container width grows with the size of the screen.
-   * Set to `false` to disable `maxWidth`.
-   */
-  maxWidth: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.oneOf(['xs', 'sm', 'md', 'lg', 'xl', false])
-} : undefined;
-/* harmony default export */ __webpack_exports__["default"] = (Object(_styles_withStyles__WEBPACK_IMPORTED_MODULE_6__["default"])(styles, {
-  name: 'MuiContainer'
-})(Container));
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/core/esm/Container/index.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/@material-ui/core/esm/Container/index.js ***!
-  \***************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Container__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Container */ "./node_modules/@material-ui/core/esm/Container/Container.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _Container__WEBPACK_IMPORTED_MODULE_0__["default"]; });
-
-
-
-/***/ }),
-
 /***/ "./node_modules/@material-ui/core/esm/CssBaseline/CssBaseline.js":
 /*!***********************************************************************!*\
   !*** ./node_modules/@material-ui/core/esm/CssBaseline/CssBaseline.js ***!
@@ -26992,16 +26823,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
-/* harmony import */ var _material_ui_core_Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Container */ "./node_modules/@material-ui/core/esm/Container/index.js");
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
-/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Grid */ "./node_modules/@material-ui/core/esm/Grid/index.js");
-/* harmony import */ var _material_ui_core_Box__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Box */ "./node_modules/@material-ui/core/esm/Box/index.js");
-/* harmony import */ var react_share__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-share */ "./node_modules/react-share/es/index.js");
-/* harmony import */ var _material_ui_icons_Share__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/Share */ "./node_modules/@material-ui/icons/Share.js");
-/* harmony import */ var _material_ui_icons_Share__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Share__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
+/* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Grid */ "./node_modules/@material-ui/core/esm/Grid/index.js");
+/* harmony import */ var _material_ui_core_Box__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Box */ "./node_modules/@material-ui/core/esm/Box/index.js");
+/* harmony import */ var react_share__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-share */ "./node_modules/react-share/es/index.js");
+/* harmony import */ var _material_ui_icons_Share__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/Share */ "./node_modules/@material-ui/icons/Share.js");
+/* harmony import */ var _material_ui_icons_Share__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Share__WEBPACK_IMPORTED_MODULE_6__);
 var _jsxFileName = "/Users/josh/sandbox/joshkitt/evdb/src/Footer.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
 
 
  // import TwitterIcon from '@material-ui/icons/Twitter';
@@ -27026,158 +26855,158 @@ function Footer() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 36,
       columnNumber: 5
     }
-  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3__["default"], {
     align: "center",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 7
+    }
+  }, __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    component: "span",
+    marginLeft: "7px",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 9
+    }
+  }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_5__["TwitterShareButton"], {
+    url: "http://www.evdb.app",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40,
+      columnNumber: 11
+    }
+  }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_5__["TwitterIcon"], {
+    size: 32,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 13
+    }
+  }))), __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    component: "span",
+    marginLeft: "7px",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44,
+      columnNumber: 9
+    }
+  }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_5__["FacebookShareButton"], {
+    url: "http://www.evdb.app",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45,
+      columnNumber: 11
+    }
+  }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_5__["FacebookIcon"], {
+    size: 32,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 13
+    }
+  }))), __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    component: "span",
+    marginLeft: "7px",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49,
+      columnNumber: 9
+    }
+  }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_5__["RedditShareButton"], {
+    url: "http://www.evdb.app",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 11
+    }
+  }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_5__["RedditIcon"], {
+    size: 32,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 51,
-      columnNumber: 7
+      columnNumber: 13
     }
-  }, __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }))), __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_4__["default"], {
     component: "span",
     marginLeft: "7px",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53,
-      columnNumber: 9
-    }
-  }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_6__["TwitterShareButton"], {
-    url: "http://www.evdb.app",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 54,
-      columnNumber: 11
+      columnNumber: 9
     }
-  }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_6__["TwitterIcon"], {
-    size: 32,
+  }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_5__["LinkedinShareButton"], {
+    url: "http://www.evdb.app",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 55,
-      columnNumber: 13
+      columnNumber: 11
     }
-  }))), __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    component: "span",
-    marginLeft: "7px",
+  }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_5__["LinkedinIcon"], {
+    size: 32,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
-      columnNumber: 9
+      lineNumber: 56,
+      columnNumber: 13
     }
-  }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_6__["FacebookShareButton"], {
-    url: "http://www.evdb.app",
+  }))), __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    component: "span",
+    marginLeft: "7px",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 59,
-      columnNumber: 11
+      columnNumber: 9
     }
-  }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_6__["FacebookIcon"], {
-    size: 32,
+  }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_5__["EmailShareButton"], {
+    url: "http://www.evdb.app",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 60,
-      columnNumber: 13
-    }
-  }))), __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    component: "span",
-    marginLeft: "7px",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63,
-      columnNumber: 9
-    }
-  }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_6__["RedditShareButton"], {
-    url: "http://www.evdb.app",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64,
       columnNumber: 11
     }
-  }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_6__["RedditIcon"], {
+  }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_5__["EmailIcon"], {
     size: 32,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65,
+      lineNumber: 61,
       columnNumber: 13
     }
-  }))), __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    component: "span",
-    marginLeft: "7px",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 68,
-      columnNumber: 9
-    }
-  }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_6__["LinkedinShareButton"], {
-    url: "http://www.evdb.app",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69,
-      columnNumber: 11
-    }
-  }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_6__["LinkedinIcon"], {
-    size: 32,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 70,
-      columnNumber: 13
-    }
-  }))), __jsx(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    component: "span",
-    marginLeft: "7px",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73,
-      columnNumber: 9
-    }
-  }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_6__["EmailShareButton"], {
-    url: "http://www.evdb.app",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 74,
-      columnNumber: 11
-    }
-  }, __jsx(react_share__WEBPACK_IMPORTED_MODULE_6__["EmailIcon"], {
-    size: 32,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75,
-      columnNumber: 13
-    }
-  })))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  })))), __jsx(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_3__["default"], {
     align: "center",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79,
+      lineNumber: 65,
       columnNumber: 7
     }
-  }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, __jsx(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_2__["default"], {
     variant: "body2",
     color: "textSecondary",
     align: "center",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 66,
       columnNumber: 9
     }
   }, "Copyright © ", "Electric Vehicle Database ", new Date().getFullYear(), ".")));
